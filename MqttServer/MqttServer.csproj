@@ -1,0 +1,70 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\MessageConverter\MessageConverter.csproj" />
+      <ProjectReference Include="..\MqttClient\MqttClient.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Broker.cs">
+        <DependentUpon>IBroker.cs</DependentUpon>
+      </Compile>
+      <Compile Update="ClientExtension\ServerProcessors\ServerConnectProcessor.cs">
+        <DependentUpon>IServerProcessor.cs</DependentUpon>
+      </Compile>
+      <Compile Update="ClientExtension\ServerProcessors\ServerDisconnectProcessor.cs">
+        <DependentUpon>IServerProcessor.cs</DependentUpon>
+      </Compile>
+      <Compile Update="ClientExtension\ServerProcessors\ServerPingProcessor.cs">
+        <DependentUpon>IServerProcessor.cs</DependentUpon>
+      </Compile>
+      <Compile Update="ClientExtension\ServerProcessors\ServerPublishProcessor.cs">
+        <DependentUpon>IServerProcessor.cs</DependentUpon>
+      </Compile>
+      <Compile Update="ClientExtension\ServerProcessors\ServerSubscribeProcessor.cs">
+        <DependentUpon>IServerProcessor.cs</DependentUpon>
+      </Compile>
+      <Compile Update="ClientExtension\ServerProcessors\ServerUnsubscribeProcessor.cs">
+        <DependentUpon>IServerProcessor.cs</DependentUpon>
+      </Compile>
+      <Compile Update="ClientExtension\MqttServerClient.cs">
+        <DependentUpon>IMqttServerClient.cs</DependentUpon>
+      </Compile>
+      <Compile Update="SrvClientExtension\SrvCommands\SrvConnectCommand.cs">
+        <DependentUpon>ISrvCommand.cs</DependentUpon>
+      </Compile>
+      <Compile Update="SrvClientExtension\SrvCommands\SrvDisconnectCommand.cs">
+        <DependentUpon>ISrvCommand.cs</DependentUpon>
+      </Compile>
+      <Compile Update="SrvClientExtension\SrvCommands\SrvPingCommand.cs">
+        <DependentUpon>ISrvCommand.cs</DependentUpon>
+      </Compile>
+      <Compile Update="SrvClientExtension\SrvCommands\SrvPublishCommand.cs">
+        <DependentUpon>ISrvCommand.cs</DependentUpon>
+      </Compile>
+      <Compile Update="SrvClientExtension\SrvCommands\SrvSubscribeCommand.cs">
+        <DependentUpon>ISrvCommand.cs</DependentUpon>
+      </Compile>
+      <Compile Update="SrvClientExtension\SrvCommands\SrvUnsubscribeCommand.cs">
+        <DependentUpon>ISrvCommand.cs</DependentUpon>
+      </Compile>
+      <Compile Update="SrvClientExtension\MqttSrvClient.cs">
+        <DependentUpon>IMqttSrvClient.cs</DependentUpon>
+      </Compile>
+      <Compile Update="FilterCompareResult.cs">
+        <DependentUpon>FilterComparer.cs</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="BCrypt.Net-Core" Version="1.6.0" />
+    </ItemGroup>
+
+</Project>

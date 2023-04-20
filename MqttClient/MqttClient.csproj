@@ -1,0 +1,73 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\MessageConverter\MessageConverter.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="ClientExtension\ClientProcessors\ClientPublishCommand.cs">
+        <DependentUpon>IClientProcessor.cs</DependentUpon>
+      </Compile>
+      <Compile Update="ClientExtension\ClientProcessors\ClientSubscribeCommand.cs">
+        <DependentUpon>IClientProcessor.cs</DependentUpon>
+      </Compile>
+      <Compile Update="ClientExtension\ClientProcessors\ClientUnsubscribeCommand.cs">
+        <DependentUpon>IClientProcessor.cs</DependentUpon>
+      </Compile>
+      <Compile Update="ClientExtension\ClientProcessors\ClientPingCommand.cs">
+        <DependentUpon>IClientProcessor.cs</DependentUpon>
+      </Compile>
+      <Compile Update="ClientExtension\ClientProcessors\ClientDisconnectCommand.cs">
+        <DependentUpon>IClientProcessor.cs</DependentUpon>
+      </Compile>
+      <Compile Update="ClientExtension\ClientProcessors\ClientConnectCommand.cs">
+        <DependentUpon>IClientProcessor.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Client\Processors\PingProcessor.cs">
+        <DependentUpon>IMessageProcessor.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Client\Processors\PublishProcessor.cs">
+        <DependentUpon>IMessageProcessor.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Client\Processors\SubscribeProcessor.cs">
+        <DependentUpon>IMessageProcessor.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Client\Processors\UnsubscribeProcessor.cs">
+        <DependentUpon>IMessageProcessor.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Client\Processors\DisconnectProcessor.cs">
+        <DependentUpon>IMessageProcessor.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Client\Processors\ConnectProcessor.cs">
+        <DependentUpon>IMessageProcessor.cs</DependentUpon>
+      </Compile>
+      <Compile Update="ClientExtension\ClientCommands\ClientConnectCommand.cs">
+        <DependentUpon>IClientCommand.cs</DependentUpon>
+      </Compile>
+      <Compile Update="ClientExtension\ClientCommands\ClientDisconnectCommand.cs">
+        <DependentUpon>IClientCommand.cs</DependentUpon>
+      </Compile>
+      <Compile Update="ClientExtension\ClientCommands\ClientPingCommand.cs">
+        <DependentUpon>IClientCommand.cs</DependentUpon>
+      </Compile>
+      <Compile Update="ClientExtension\ClientCommands\ClientPublishCommand.cs">
+        <DependentUpon>IClientCommand.cs</DependentUpon>
+      </Compile>
+      <Compile Update="ClientExtension\ClientCommands\ClientSubscribeCommand.cs">
+        <DependentUpon>IClientCommand.cs</DependentUpon>
+      </Compile>
+      <Compile Update="ClientExtension\ClientCommands\ClientUnsubscribeCommand.cs">
+        <DependentUpon>IClientCommand.cs</DependentUpon>
+      </Compile>
+      <Compile Update="ClientExtension\MqttClient.cs">
+        <DependentUpon>IMqttClient.cs</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+</Project>

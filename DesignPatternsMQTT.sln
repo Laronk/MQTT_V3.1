@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MqttServer", "MqttServer\MqttServer.csproj", "{D891BB87-04F3-425D-AA8A-061112E35B64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageConverter", "MessageConverter\MessageConverter.csproj", "{3E2778E3-D99F-4674-B42E-6CF61E8A44B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MqttClient", "MqttClient\MqttClient.csproj", "{92453314-5BCC-4A11-912D-3E535294ED7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MqttDataStructures", "MqttDataStructures\MqttDataStructures.csproj", "{197C8509-8BC1-4782-9FFB-B05427AC68C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesterAppClient", "TesterAppClient\TesterAppClient.csproj", "{9FDBB1D7-457D-4A57-AE86-2657662E1109}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesterAppServer", "TesterAppServer\TesterAppServer.csproj", "{53D79556-8F31-47DD-AFDF-1E3F7745B9D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D891BB87-04F3-425D-AA8A-061112E35B64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D891BB87-04F3-425D-AA8A-061112E35B64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D891BB87-04F3-425D-AA8A-061112E35B64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D891BB87-04F3-425D-AA8A-061112E35B64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E2778E3-D99F-4674-B42E-6CF61E8A44B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E2778E3-D99F-4674-B42E-6CF61E8A44B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E2778E3-D99F-4674-B42E-6CF61E8A44B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E2778E3-D99F-4674-B42E-6CF61E8A44B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92453314-5BCC-4A11-912D-3E535294ED7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92453314-5BCC-4A11-912D-3E535294ED7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92453314-5BCC-4A11-912D-3E535294ED7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92453314-5BCC-4A11-912D-3E535294ED7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{197C8509-8BC1-4782-9FFB-B05427AC68C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{197C8509-8BC1-4782-9FFB-B05427AC68C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{197C8509-8BC1-4782-9FFB-B05427AC68C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{197C8509-8BC1-4782-9FFB-B05427AC68C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FDBB1D7-457D-4A57-AE86-2657662E1109}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FDBB1D7-457D-4A57-AE86-2657662E1109}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FDBB1D7-457D-4A57-AE86-2657662E1109}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FDBB1D7-457D-4A57-AE86-2657662E1109}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53D79556-8F31-47DD-AFDF-1E3F7745B9D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53D79556-8F31-47DD-AFDF-1E3F7745B9D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53D79556-8F31-47DD-AFDF-1E3F7745B9D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53D79556-8F31-47DD-AFDF-1E3F7745B9D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02AA4927-E109-44D6-A706-F6E2DD25CB59}
+	EndGlobalSection
+EndGlobal

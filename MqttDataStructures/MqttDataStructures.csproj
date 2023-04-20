@@ -1,0 +1,85 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Update="IPayload.cs">
+        <DependentUpon>Message.cs</DependentUpon>
+      </Compile>
+      <Compile Update="IVariableHeader.cs">
+        <DependentUpon>Message.cs</DependentUpon>
+      </Compile>
+      <Compile Update="FixedHeader.cs">
+        <DependentUpon>Message.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Messages\Connects\ConnectFlags.cs">
+        <DependentUpon>Connect.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Messages\Connects\ConnectReturnCode.cs">
+        <DependentUpon>ConnAck.cs</DependentUpon>
+      </Compile>
+      <Compile Update="MessageType.cs">
+        <DependentUpon>FixedHeader.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Messages\Connects\ConnectPayload.cs">
+        <DependentUpon>Connect.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Messages\Connects\ConnectVarHead.cs">
+        <DependentUpon>Connect.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Messages\Connects\ConnAckVarHead.cs">
+        <DependentUpon>ConnAck.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Messages\Pubs\PublishPayload.cs">
+        <DependentUpon>Publish.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Messages\Pubs\PublishVarHead.cs">
+        <DependentUpon>Publish.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Messages\Subs\SubAckPayload.cs">
+        <DependentUpon>SubAck.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Messages\Subs\SubAckVarHead.cs">
+        <DependentUpon>SubAck.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Messages\Subs\SubscribePayload.cs">
+        <DependentUpon>Subscribe.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Messages\Subs\SubscribeVarHead.cs">
+        <DependentUpon>Subscribe.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Messages\UnSubs\UnSubAckVarHead.cs">
+        <DependentUpon>UnSubAck.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Messages\UnSubs\UnSubscribeVarHead.cs">
+        <DependentUpon>UnSubscribe.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Messages\UnSubs\UnSubscribePayload.cs">
+        <DependentUpon>UnSubscribe.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Messages\Subs\Subscription.cs">
+        <DependentUpon>Subscribe.cs</DependentUpon>
+      </Compile>
+      <Compile Update="MessageIdentifier.cs">
+        <DependentUpon>IVariableHeader.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Messages\UnSubs\UnsubscribePayloadProperties.cs">
+        <DependentUpon>Unsubscribe.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Messages\UnSubs\UnsubscribeVarHeadProperties.cs">
+        <DependentUpon>Unsubscribe.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Messages\UnSubs\UnsubAckVarHeadProperties.cs">
+        <DependentUpon>UnsubAck.cs</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Properties" />
+    </ItemGroup>
+
+</Project>
